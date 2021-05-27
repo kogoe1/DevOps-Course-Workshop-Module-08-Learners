@@ -35,7 +35,7 @@ jobs:
     - name: Typescript test
       run: npm run test
       working-directory: ./DotnetTemplate.Web
-      
+
   push_to_registry:
     name: Push Docker image to Docker Hub
     steps:
@@ -51,4 +51,5 @@ jobs:
         with:
           push: true
           tags: kogoe1/devops:latest
+          
 
